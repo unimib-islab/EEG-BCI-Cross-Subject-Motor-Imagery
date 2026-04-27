@@ -1,0 +1,12 @@
+name,samples_160,n_events_total,n_L,n_R,n_F,n_B,n_0
+Subject01_Session_1_EEG_RAW_V1,100929,72,6,6,6,6,48
+Subject01_Session_2_EEG_RAW_V1,99891,72,6,6,6,6,48
+Subject02_Session_1_EEG_RAW_V1,100452,72,6,6,6,6,48
+Subject02_Session_2_EEG_RAW_V1,99371,72,6,6,6,6,48
+Subject03_Session_1_EEG_RAW_V1,99979,72,6,6,6,6,48
+Subject03_Session_2_EEG_RAW_V1,106082,72,6,6,6,6,48
+Subject04_Session_1_EEG_RAW_V1,100656,69,6,6,6,5,46
+Subject04_Session_2_EEG_RAW_V1,101243,72,6,6,6,6,48
+Subject05_Session_1_EEG_RAW_V1,100566,72,6,6,6,6,48
+Subject05_Session_1_Partial_low_battery_EEG_RAW_V1,108503,27,2,2,2,3,18
+Subject05_Session_2_EEG_RAW_V1,100000,72,6,6,6,6,48
