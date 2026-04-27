@@ -39,14 +39,5 @@ Notebooks and pretrained models for cross-subject motor imagery classification o
 - `model_loso_5_class_1s_I.rar`
 - Aggregate metrics and normalization stats are in `stats_loso_*.json`.
 
-## EEG_RAW_V1 data format (HDF5)
-
-- `/raw/data`: `float32` matrix shaped `(channels, samples)`
-- `/raw/ch_names`: ordered channel names
-- `/info/sample_rate`: integer in Hz
-- `/events/table`: columns `onset_sample`, `duration_samples`, `label`
-
-The conversion notebook standardizes all recordings to 32 channels at 160 Hz with harmonized event labels so they are compatible with the provided LOSO models.
-
 ## ISLab-MI Dataset
 The recordings are available in the repository folder named `data/ISLab-MI/`
