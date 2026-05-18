@@ -1,2 +1,8 @@
 __pycache__/
 data_conversion/converted_dataset_EEG_RAW_V1/*.hdf5
+
+local/
+logs/
+models/
+data_stats/
+data/

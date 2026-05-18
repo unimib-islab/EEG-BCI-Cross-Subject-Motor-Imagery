@@ -1,0 +1,43 @@
+project: MI_kfold_training
+device: cuda:0
+model: model.MultiBranchCNNLSTM
+optimizer: torch.optim.AdamW
+epochs: 40
+batch_size: 16
+seeds: [60]
+
+sstl: false
+
+early_stopping_config:
+  enabled: true
+  patience: 10
+
+net_config:
+  scales_kernels: [31,25,13,7]
+  fe_feat_depth: 64
+  lstm_hidden_size: 768
+  classifier_hidden_dim: 384
+
+optimizer_config:
+  lr: 2.89e-4
+  w_decay: 5.82e-4
+
+criterion: torch.nn.CrossEntropyLoss
+
+data: datasets.EEGMMIDBDataset
+
+apply_ica: false
+
+save_config:
+  save_path: 'local/'
+  model_save_path: 'models/'
+  log_path: 'logs/'
+  stats_path: 'data_stats/'
+
+protocol:
+  n_channels: 64
+  sampling_frequency: 160
+  event_duration_sec: 4.0
+  subjects:
+    range: [1, 110]
+    exclude: [88, 89, 92, 100, 104, 106]

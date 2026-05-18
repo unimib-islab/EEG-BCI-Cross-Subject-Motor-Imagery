@@ -39,6 +39,12 @@ Notebooks and pretrained models for cross-subject motor imagery classification o
 - `model_loso_5_class_1s_I.rar`
 - Aggregate metrics and normalization stats are in `stats_loso_*.json`.
 
+## Code order:
+
+`main.py` Training with k-fold coss validation + ablation
+
+`loso_and_retrain32.py` Trainging with special LOSO config for ISLab dataset.
+
 ## EEG_RAW_V1 data format (HDF5)
 
 - `/raw/data`: `float32` matrix shaped `(channels, samples)`
